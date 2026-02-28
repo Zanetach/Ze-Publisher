@@ -44,7 +44,7 @@ export default class AssetsManager {
 	templatesPath: string;
 	private assetsPathResolved = false;
 
-	private constructor() {}
+	private constructor() { }
 
 	// 静态方法，用于获取实例
 	public static getInstance(): AssetsManager {
@@ -198,7 +198,7 @@ export default class AssetsManager {
 	}
 
 	getThemeURL() {
-		return `https://github.com/markshawn2020/obsidian-zepublish/releases/latest/download/assets.zip`;
+		return `https://github.com/Zanetach/Ze-Publisher-2026/releases/latest/download/assets.zip`;
 	}
 
 	private async ensureAssetsDirs() {
@@ -453,8 +453,7 @@ export default class AssetsManager {
 		const candidates = [
 			this.manifest?.dir,
 			this.manifest?.id,
-			"zepublish",
-			"obsidian-zepublish",
+			"ze-publisher",
 		].filter(Boolean) as string[];
 
 		for (const dir of candidates) {
