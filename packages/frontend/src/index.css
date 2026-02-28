@@ -204,7 +204,7 @@
    注意：由于 Shadow DOM 隔离，Obsidian 变量无法穿透
    这里保留映射以备将来通过 JS 桥接使用
    =================================== */
-.zepublish-obsidian-env {
+.ze-publisher-env {
 	/* 背景和前景色 */
 	--background: var(--background-primary, oklch(1 0 0));
 	--foreground: var(--text-normal, oklch(0.145 0 0));

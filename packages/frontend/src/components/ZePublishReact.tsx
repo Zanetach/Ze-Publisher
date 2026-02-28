@@ -801,7 +801,7 @@ export const ZePublishReact: React.FC<ZePublishReactProps> = (props) => {
 
 			{/* HMR 测试指示器 - 仅在开发模式显示 */}
 			{((window as any).__ZEPUBLISH_HMR_MODE__ ||
-				(window as any).__LOVPEN_HMR_MODE__) && <HMRTest />}
+				(window as any).__ZEPUBLISH_HMR_MODE__) && <HMRTest />}
 		</div>
 	);
 };

@@ -1339,7 +1339,7 @@ ${customCSS}`;
 			logger.info("[Shadow DOM] 禁用 Shadow DOM 模式，使用传统渲染");
 
 			// 传统模式：添加 Obsidian 环境类
-			this.reactContainer.classList.add("zepublish-obsidian-env");
+			this.reactContainer.classList.add("ze-publisher-env");
 			this.shadowRoot = null;
 
 			// 传统模式下，如果是生产环境，需要加载 CSS 到 document.head

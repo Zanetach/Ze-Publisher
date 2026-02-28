@@ -179,13 +179,13 @@ if (typeof window !== "undefined") {
 	(window as any).zepublishReact = ZePublishReactLib;
 	// 🔑 暴露编译后的 CSS，供 Obsidian Shadow DOM 使用
 	(window as any).__ZEPUBLISH_COMPILED_CSS__ = compiledCSS;
-	(window as any).__LOVPEN_COMPILED_CSS__ = compiledCSS;
+	(window as any).__ZEPUBLISH_COMPILED_CSS__ = compiledCSS;
 	logger.info("Dev Mode initialized with HMR support");
 	logger.info("Compiled CSS length:", compiledCSS.length);
 
 	// Also expose a flag to indicate HMR mode
 	(window as any).__ZEPUBLISH_HMR_MODE__ = true;
-	(window as any).__LOVPEN_HMR_MODE__ = true;
+	(window as any).__ZEPUBLISH_HMR_MODE__ = true;
 }
 
 // For standalone development - render mock component if there's a root element
