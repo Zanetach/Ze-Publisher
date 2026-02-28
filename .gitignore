@@ -25,3 +25,9 @@ data.json
 vite.config.ts.timestamp*
 *.zip
 .env.local
+releases/
+
+# Build outputs in packages
+packages/*/dist
+packages/*/node_modules
+packages/*/.turbo
