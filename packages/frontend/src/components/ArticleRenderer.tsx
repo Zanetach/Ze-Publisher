@@ -762,7 +762,31 @@ export const ArticleRenderer: React.FC<ArticleRendererProps> = memo(
 			};
 
 			const buildMermaidSourceCandidates = (rawSource: string): string[] => {
-				const source = rawSource.trim();
+				const stripLineNumberPrefix = (input: string) => {
+					const lines = input.split(/\r?\n/);
+					return lines
+						.map((line, index) => {
+							const trimmed = line.trim();
+							// 场景1: "12    A --> B" 这类复制时带行号
+							let normalized = line.replace(/^\s*\d+\s+/, "");
+							// 场景2: 首行 "1flowchart TD" / "1graph TD"（行号紧贴语法）
+							if (index === 0) {
+								normalized = normalized.replace(
+									/^\s*\d+(flowchart|graph)\b/i,
+									"$1",
+								);
+							}
+							// 兜底：如果行内容只剩编号，不影响结果
+							if (/^\d+$/.test(trimmed)) {
+								return "";
+							}
+							return normalized;
+						})
+						.join("\n")
+						.trim();
+				};
+
+				const source = stripLineNumberPrefix(rawSource.trim());
 				const candidates: string[] = [];
 				const pushUnique = (value: string) => {
 					const normalized = value.trim();
