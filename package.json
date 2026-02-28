@@ -1,6 +1,6 @@
 {
 	"name": "ze-publisher",
-	"version": "0.25",
+	"version": "0.2.6",
 	"description": "This is a plugin for Obsidian (https://obsidian.md)",
 	"main": "dist/main.js",
 	"packageManager": "pnpm@10.12.1",
