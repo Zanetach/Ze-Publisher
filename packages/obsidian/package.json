@@ -1,5 +1,5 @@
 {
-	"name": "@ze-publisher/obsidian",
+	"name": "Ze Publisher",
 	"version": "0.25",
 	"description": "",
 	"main": "index.js",
