@@ -84,6 +84,11 @@ jobs:
           # 创建压缩包（固定文件名，便于 curl 安装）
           mkdir -p release-files
           zip -r release-files/obsidian-zepublish.zip obsidian-zepublish/
+          
+          # 同时提供 Obsidian 社区插件常用的 3 个独立文件
+          cp packages/obsidian/dist/main.js release-files/main.js
+          cp packages/obsidian/dist/manifest.json release-files/manifest.json
+          cp packages/obsidian/dist/styles.css release-files/styles.css
 
       - name: Generate changelog
         id: changelog
@@ -129,6 +134,9 @@ jobs:
             - 📝 模板系统，自定义内容渲染
           files: |
             release-files/obsidian-zepublish.zip
+            release-files/main.js
+            release-files/manifest.json
+            release-files/styles.css
           draft: false
           prerelease: false
         env:
