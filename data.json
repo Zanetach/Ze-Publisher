@@ -1,0 +1,53 @@
+{
+  "defaultStyle": "mpp-brown",
+  "defaultHighlight": "默认",
+  "showStyleUI": true,
+  "linkDescriptionMode": "raw",
+  "embedStyle": "quote",
+  "lineNumber": true,
+  "enableWeixinCodeFormat": false,
+  "authKey": "",
+  "useCustomCss": false,
+  "wxInfo": [],
+  "math": "latex",
+  "useTemplate": false,
+  "defaultTemplate": "default",
+  "themeColor": "#7852ee",
+  "enableThemeColor": false,
+  "distributionConfig": {},
+  "enableHeadingNumber": true,
+  "enableHeadingDelimiterBreak": true,
+  "expandedAccordionSections": [],
+  "lastSelectedPlatform": "",
+  "lastSelectedTemplate": "",
+  "pluginsConfig": {},
+  "enableDefaultAuthorProfile": false,
+  "defaultAuthorName": "",
+  "defaultAuthorImageData": "",
+  "personalInfo": {
+    "name": "",
+    "bio": "",
+    "email": "",
+    "website": ""
+  },
+  "aiPromptTemplate": "",
+  "aiModel": "claude-3-5-haiku-latest",
+  "scaleCodeBlockInImage": true,
+  "hideFirstHeading": false,
+  "showCoverInArticle": true,
+  "toolbarPosition": "left",
+  "uiThemeMode": "auto",
+  "imageSaveFolderEnabled": true,
+  "imageSaveFolder": "zepublish-images",
+  "cloudStorage": {
+    "enabled": false,
+    "provider": "local",
+    "qiniu": {
+      "accessKey": "",
+      "secretKey": "",
+      "bucket": "",
+      "domain": "",
+      "region": "z0"
+    }
+  }
+}
