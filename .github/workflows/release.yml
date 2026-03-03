@@ -88,7 +88,13 @@ jobs:
           # 同时提供 Obsidian 社区插件常用的 3 个独立文件
           cp packages/obsidian/dist/main.js release-files/main.js
           cp packages/obsidian/dist/manifest.json release-files/manifest.json
-          cp packages/obsidian/dist/styles.css release-files/styles.css
+          if [ -f packages/obsidian/dist/styles.css ]; then
+            cp packages/obsidian/dist/styles.css release-files/styles.css
+          elif [ -f styles.css ]; then
+            cp styles.css release-files/styles.css
+          else
+            : > release-files/styles.css
+          fi
 
       - name: Generate changelog
         id: changelog
