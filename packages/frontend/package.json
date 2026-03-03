@@ -1,6 +1,6 @@
 {
 	"name": "@ze-publisher/frontend",
-	"version": "0.2.6",
+	"version": "0.26.0",
 	"type": "module",
 	"scripts": {
 		"dev": "vite",

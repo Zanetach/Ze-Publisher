@@ -1,6 +1,6 @@
 {
 	"name": "Ze-Publisher",
-	"version": "0.2.6",
+	"version": "0.26.0",
 	"description": "",
 	"main": "index.js",
 	"scripts": {
